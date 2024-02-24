@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main(){
+    float len,bre,r,aor,por,aoc,coc,pi=3.14;
+    printf("enter the length and breadth of the  rectangle:");
+    scanf("%f%f",&len,&bre);
+    aor=len*bre;
+    por=2*(len*bre);
+    printf("enter the radius of the circle:");
+    scanf("%f",&r);
+    aoc=pi*(r*r);
+    coc=2*pi*r;
+    printf("The area of the rectangle=%f \n",aor);
+    printf("The perimeter of the rectangle=%f \n",por);
+    printf("The area of the circle=%f \n",aoc);
+    printf("The circummference of the circle=%f \n",coc);
+}
+
+o/p
+enter the length and breadth of the  rectangle:20.2
+30.5
+enter the radius of the circle:30.6
+The area of the rectangle=616.100037 
+The perimeter of the rectangle=1232.200073 
+The area of the circle=2940.170654 
+The circummference of the circle=192.168015 
