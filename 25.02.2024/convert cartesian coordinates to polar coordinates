@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include<math.h>
+
+int main() {
+    int x,y,degree;
+    float r,phi,p=3.141592;
+    printf("enter the coordinates:");
+    scanf("%d %d\n",&x,&y);
+    r=sqrt(x*x+y*y);
+    phi=atan(y/x);
+    degree=phi*(180/p);
+    printf("%f,%d",r,degree);
+    
+}
+
+
+
+o/p:
+enter the coordinates:20 30
+36.055511,45
