@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+ float x1,x2,x3,y1,y2,y3,slope1,slope2;
+ printf("enter the coordinates of first point(x1,y1):");
+ scanf("%f%f",&x1,&y1);
+ printf("enter the coordinates of second point(x2,y2):");
+ scanf("%f%f",&x2,&y2);
+ printf("enter the coordinates of third point(x3,y3):");
+ scanf("%f%f",&x3,&y3);
+ slope1=(y2-y1)/(x2-x1);
+ slope2=(y3-y1)/(x3-x1);
+ if(slope1==slope2){
+     printf("three lines fall on same line");
+ }
+ else{
+     printf("they lies on different lines");
+ }
+ 
+ 
+ 
+  
+}
+
+
+
+o/p:
+enter the coordinates of first point(x1,y1):2 5
+enter the coordinates of second point(x2,y2):5 6
+enter the coordinates of third point(x3,y3):3 6
+they lies on different lines
