@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+  int len,bre,area,peri;
+  printf("enter the length and breadth of the rectangle:");
+  scanf("%d%d",&len,&bre);
+  area=len*bre;
+  peri=2*(len+bre);
+  if(area>peri){
+      printf("area of the rectangle is greater");
+  }
+  else{
+      printf("perimeter is  great");
+  }
+  
+}
+
+
+
+o/p:
+enter the length and breadth of the rectangle:1 1
+perimeter is  great
