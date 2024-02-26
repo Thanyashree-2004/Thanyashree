@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+int main()
+{
+   int fdn,rev_num,s1,s2,s3,s4,s5;
+   scanf("%d",&fdn);
+   int original_fdn=fdn;
+   s5=fdn%10;
+   fdn=fdn/10;
+   s4=fdn%10;
+   fdn=fdn/10;
+   s3=fdn%10;
+   fdn=fdn/10;
+   s2=fdn%10;
+   fdn=fdn/10;
+   s1=fdn%10;
+   fdn=fdn/10;
+   rev_num=s5*10000+s4*1000+s3*100+s2*10+s1*1;
+   printf("%d",rev_num);
+   if(original_fdn==rev_num){
+       printf("both are equal");
+   }
+   else{
+       printf("not equal");
+   }
+}
+
+o/p:
+45354
+45354 
+both are equal
+
+
+
+In your program, you are checking for equality between fdn and rev_num after you have already modified fdn and calculated rev_num. Since fdn has been modified in the process of calculating rev_num, comparing it to rev_num will not yield the expected result.
+
+To fix this, you should store the original value of fdn in a separate variable before performing the calculations. Then you can compare the original value with the reversed number. Here's the corrected version of your code:
