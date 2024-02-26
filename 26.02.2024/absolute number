@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+  float num,abs_num;
+  scanf("%f",&num);
+  if(num<0){
+      abs_num=-num;
+      
+  }
+  else{
+      abs_num=num;
+  }
+  printf("%f",num);
+  
+}
+
+
+
+o/p:
+-1.5
+-1.500000
