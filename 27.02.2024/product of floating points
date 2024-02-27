@@ -1,0 +1,19 @@
+#include <stdio.h>
+float multiply(float a,float b){
+    return a*b;;
+}
+
+int main()
+{
+ float a,b;
+ printf("enter two numbers:");
+ scanf("%f%f",&a,&b);
+ float product=multiply(a,b);
+ printf("the product is: %.3f",product);
+}
+
+
+
+o/p:
+enter two numbers:2.12 3.88
+the product is: 8.226
