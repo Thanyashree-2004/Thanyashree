@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+  float x,y;
+  printf("enter the coodrdinates x and y:");
+  scanf("%f%f",&x,&y);
+  if(x==0 && y==0){
+      printf("it lies on origin or axis");
+  }
+  else if(x==0){
+      printf("it lies on y axis");
+  }
+  else if(y==0){
+      printf("it lies on x axiis");
+  }
+  else{
+      printf("it doesnot lie on either x axis or y axis ");
+  }
+   
+   
+}
+
+
+o/p:
+enter the coodrdinates x and y:0 1
+it lies on y axis
