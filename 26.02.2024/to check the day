@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+  int year,day;
+  printf("enter the year and dayy u wanna know:");
+  scanf("%d",&year);
+  int century=year/100;
+  int yr_in_century=year%100;
+  day=(1+((13*13)*(13*13))/5+yr_in_century+(yr_in_century/4)+(century/4)-(2*century))%7;
+  switch(day){
+      
+      case 7:
+      printf("sunday");
+      break;
+      case 1:
+      printf("monday");
+      break;
+      case 2:
+      printf("tuesday");
+      break;
+      case 3:
+      printf("wednesday");
+      break;
+      case 4:
+      printf("thursday");
+      break;
+      case 5:
+      printf("friday");
+      break;
+      case 6:
+      printf("saturday");
+      break;
+      default:
+      printf("error");
+  }
+   return 0;
+   
+}
+
+
+
+o/p:
+enter the year and dayy u wanna know:2020
+friday
