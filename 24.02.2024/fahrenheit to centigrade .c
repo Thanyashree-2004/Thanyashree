@@ -2,7 +2,7 @@
 
 int main() {
     float fahre,cent;
-    printf("enter the temperatur in fahrenheit");
+    printf("enter the temperature in fahrenheit");
     scanf("%f",&fahre);
     cent=(fahre-32)*5/9;
     printf("the temperature in centigrade is:%f",cent);
