@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include<math.h>
+
+int main()
+{
+    double ci, p,n,r,amount;
+    printf("enter p,n,r to calculate the compund interest");
+    scanf("%lf",&p);
+    scanf("%lf",&r);
+    scanf("%lf",&n);
+    amount=p*((pow((1+r/100),n)));
+    ci=amount-p;
+    printf("%lf",ci);
+}
+
+
+o/p:
+enter p,n,r to calculate the compund interest1000
+2
+4
+82.432160
