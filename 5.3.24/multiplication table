@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int print_table(int range,int num ){
+    int mul;
+    for(int i=1;i<=range;i++){
+        mul=num*i;
+        printf("%d*%d=%d",num,i,mul);
+        printf("\n");
+    }
+}
+int main(){
+    int range,num;
+    printf("enter the range and the number:");
+    scanf("%d%d",&range,&num);
+    print_table(range,num);
+}
+
+o/p:
+enter the range and the number:10 5
+5*1=5
+5*2=10
+5*3=15
+5*4=20
+5*5=25
+5*6=30
+5*7=35
+5*8=40
+5*9=45
+5*10=50
