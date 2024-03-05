@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main(){
+    int max,x,y;
+    printf("give the values of x and y:");
+    scanf("%d%d",&x,&y);
+    max=(x>y)?x:y;
+    while(1){
+        if(max%x==0 && max%y==0){
+              printf("the lcm of %d , %d is %d",x,y,max);
+              break;
+    }
+    ++max;
+   
+}
+}
+
+
+o/p:
+give the values of x and y:15 25
+the lcm of 15 , 25 is 75
